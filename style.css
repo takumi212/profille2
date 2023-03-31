@@ -1,0 +1,314 @@
+style.css
+
+
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+margin: 0;
+padding: 0;
+}
+
+
+body {
+    font-family: "sans-serif";
+  }
+
+
+html {
+
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: aqua;
+
+    height: 200%;
+    width: 100%;
+
+
+}
+
+nav {
+    text-align: center;
+    background-color: #C0C0C0;
+
+    height: 300px;
+    width: 100%;
+
+    float: left;
+}
+
+.nav-outline {
+    color: black;
+    font-size: 4px;
+
+    margin-right: auto;
+    padding-left: 30px;
+
+    
+}
+
+
+nav,.title {
+    font-size: 75px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+
+
+
+
+    
+}
+
+.title {
+    display: block;
+
+    padding-right: 470px;
+
+}
+
+
+
+nav li {
+
+    list-style: none;
+
+
+}
+
+
+
+.navthree {
+    text-align: right;
+    position: absolute;
+    right: 50px;
+    
+    font-size: 50px;
+
+    text-align: left;
+
+}
+
+.navstu {
+
+}
+
+.navtra {
+
+}
+
+.navdre {
+
+}
+
+
+
+h2,.title {
+
+}
+
+.student {
+    height: 700px;
+
+}
+
+.student h3 {
+    text-align: center;
+
+    position: relative;
+    top: 10px;
+
+
+
+
+}
+
+.student img {
+    padding: 30px 50px;
+
+    border-radius: 50px 30px;
+
+    
+
+}
+
+.student p {
+    float: right;
+    padding-right: 200px;
+    padding-top: 150px;
+}
+
+
+
+
+
+.training {
+    height: 600px;
+
+
+
+}
+
+.training img {
+    border-radius: 50px 50px;
+    
+    float: right;
+    padding: 50px 40px;
+
+   
+}
+
+.training h3 {
+    text-align: center;
+
+    /* margin-top: 150px; */
+
+    padding-top: 150px;
+
+
+
+
+    
+}
+
+.tra-outline {
+    text-align: left;
+    position: absolute;
+
+    bottom: -250px;
+    left: 70px;
+
+    
+}
+
+.rizapexplain {
+    position: absolute;
+    right: 40px;
+
+
+}
+
+
+
+.tra-outline {
+
+}
+
+.rizapexplain {
+    color: yellow;
+    background: blue;
+    opacity: 0.5;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+
+.dream {
+    height: 600px;
+
+
+}
+
+.dream h3 {
+    text-align: center;
+
+    padding-left: 0px;
+
+    margin-top: 100px;
+
+
+
+}
+
+.seaexplain {
+    /* margin-left: 250px; */
+    position: relative;
+    top: 70px;
+    left: 270px;
+    width: 27%;
+    background: blue;
+    color: yellow;
+    border-radius: 10px;
+    opacity: 0.5;
+    
+}
+
+.dream img {
+    padding: 30px 170px;
+    border-radius: 50px 30px;
+}
+
+.dream li {
+    text-align: left;
+
+    padding-left: 1100px;
+
+    position: relative;
+
+    bottom: 400px;
+    right: 70px;
+
+    list-style: decimal;
+
+
+
+
+    
+}
+
+.dream li:first-child {
+    color: yellow;
+    font-size: 35px;
+}
+
+
+
+
+footer {
+    height: 100px;
+
+    background-color: green;
+
+    position: relative;
+    top: 60px;
+
+    margin-top: 80px;
+    
+
+    
+}
+
+footer h2 {
+    text-align: center;
+
+    position: relative;
+    top: 40px;
+    
+}
+
+.one-more {
+    position: relative;
+    /* bottom: 15px; */
+
+    margin-left: 40px;
+    border-radius: 50%;
+
+
+    background: yellowgreen;
+
+    
+}
+
+
+
+
+
+
+
+
