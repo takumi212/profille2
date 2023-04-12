@@ -6,30 +6,29 @@
     <title>achievements</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body id="">
-    <nav>
-        <p class="nav-outline">　こちらのポートフォリオはhtmlとcss、javascript（jquery）、…を使用しな<br>がら制作しました。そうしたときに、就職活動をする上で、私自身が自己紹介を<br>するためのポートフォリオをご用意することを予定して本ポートフォリオを制作致<br>しました。</p>
+<body>
+    <header>
+        <p class="nav-outline">　こちらのポートフォリオはhtmlとcss、JavaScript（jQuery）、…を使用しな<br>がら制作しました。そうしたときに、就職活動をする上で、私自身が自己紹介を<br>するためのポートフォリオをご用意することを予定して本ポートフォリオを制作致<br>しました。</p>
         <p class="title">achievements</p>
         <ul class="navthree">
-
             <!-- ポートフォリオについての説明をpタグを用いて書く。 -->
-
-            <li class="navstu">学生時代</li>
-            <li class="navtra">トレーニング</li>
-            <li class="navdre">夢</li>
+            <li><a href="#navstu">学生時代</a></li>
+            <li><a href="#navtra">トレーニング</a></li>
+            <li><a href="#navdre">夢</a></li>
         </ul>
-    </nav>
-    <div class="student">
-        <h3>学生時代</h3>
-        <img src="cherry.jpg" alt="桜で撮った写真" width="600" height="400">
-        <p>　私は静岡英和学院大学を卒業しました。大学生時代には<br>エンジニア
-            になるためにパソコンの学習をしながら学習を<br>しておりました。
-            左側の写真は私がこれから社会に出て働<br>くことを踏まえて、静岡県の
-            駿府公園で撮った写真です。<br>私はエンジニアとして活躍していくこと
-            を夢に現在頑張って<br>います。</p>
-    </div>
-    <div class="training">
-        <h3>トレーニング</h3>
+    </header>
+    
+    <!-- <div class="stu2"> -->
+        <p name="navstu" id="navstu">学生時代</p>
+        <p class="studentexplain">　こちらは私がこれから社会に出て働<br>くことを踏まえて、静岡県の
+            駿府公園で撮った写真です。</p>
+        <img src="cherry.jpg" class="stuimg" alt="桜で撮った写真" width="600" height="400">
+        <p class="student-me">　私は静岡英和学院大学を卒業しました。大学生時代には<br>エンジニア
+            になるためにパソコンの学習をしながら学習を<br>しておりました。<br>私はエンジニアとして活躍していくことを夢に現在頑張って<br>います。</p>
+    <!-- </div> -->
+
+    <div class="tra2">
+        <p name="navtra" id="navtra">トレーニング</p>
         <p class="tra-outline">　私は１６歳の頃からトレーニングをしています。忙しい時期以外は、
             週に2回あるいは3回の<br>ペースで通いながらトレーニングの部屋を利
             用しながら私自身の鍛錬に励んでいました。ト<br>レーニングを継続的
@@ -37,8 +36,9 @@
         <p class="rizapexplain"> こちらは[ライザップ牛サラダ]と言います。高いたん<br>ぱくと糖質が低いボリュームいっぱいのサラダです。<br>牛肉だけでなく、鶏肉・ブロッコリー・半熟玉子と<br>バランスよくたんぱく質を摂取できます。私はこち<br>らの商品をトレーニング後によく食べていました。</p>
         <img src="protein.jpg" alt="プロテインの画像" width="500" height="400">
     </div>
-    <div class="dream">
-        <h3>夢</h3>
+
+    <div class="dre2">
+        <p name="navdre" id="navdre">夢</p>
         <p class="seaexplain">こちらは私が１９歳から２０歳になったことを機に<br>プログラミング言語の学習をスタートしたときに<br>撮った沖縄県の美浜という地域から撮った海です。</p>
         <img src="sea.jpg" alt="沖縄の海" width="800" height="400">
         <ul>
@@ -53,11 +53,16 @@
             <li>見た目が良い男性になること</li>
             <li>１ヶ月に１０冊の読書ができるようになること</li>
         </ul>
+    </div>  
+
+    <div class="contact2">
+        <p>contact</p>
+        <p>私はhtmlとcss、JavaScript、jQuery、Java、Excel、Wordといった技術を習得しております。私に取り組ませていただけるパソコンの業務がありましたら、slackあるいはメールにてご連絡いただけましたらよろしくお願いします。</p>
+        <p>私のメールアドレス（完成したら記入）</p>
     </div>
     <footer>
         <h2>@Takumi.achivements</h2>
-        <a class="one-more" href="https://takumi212.github.io/myprofile/">クリックするともう一枚の<br>ポート
-            フォリオに変わります。</a>
+        <a class="one-more" href="https://takumi212.github.io/myprofile/">クリックするともう一枚の<br>ポートフォリオに変わります。</a>
     </footer>
 </body>
 </html>
