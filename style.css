@@ -22,7 +22,7 @@ html {
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: aqua;
+    background-color: #B0DAFF;
 
     height: 200%;
     width: 100%;
@@ -41,7 +41,7 @@ a {
 
 header {
     text-align: center;
-    background-color: #C0C0C0;
+    background-color: #B9E9FC;
 
     height: 300px;
     width: 100%;
@@ -51,12 +51,17 @@ header {
 }
 
 .nav-outline {
-    color: black;
     font-size: 4px;
 
-    margin-right: auto;
-    padding-left: 30px;
+    /* margin-right: 20px auto; */
 
+    padding: 0.5em;
+    color: #494949;/*文字色*/
+    background: #fffaf4;/*背景色*/
+    border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+
+    position: absolute;
+    left: 20px;
     
 }
 
@@ -80,7 +85,7 @@ header,.title {
     display: block;
 
     text-align: center;
-    padding-right: 470px;
+    /* padding-right: 470px; */
 
 }
 
@@ -92,22 +97,27 @@ header,.title {
     position: absolute;
     right: 50px;
     
-    font-size: 50px;
+    font-size: 25px;
 
     text-align: left;
 
-   
-
-}
-
-.navthree li {
-
-    
-
-
 }
 
 
+
+.navthree li:nth-child( 1 ) {
+
+
+}
+
+.navthree li:nth-child( 1 ) span {
+    color: yellow;
+
+}
+
+.one-more {
+  
+}
 
 
 .stu2 {
@@ -144,6 +154,8 @@ header,.title {
     color: yellow;
     border-radius: 10px;
     opacity: 0.5;
+
+    
 }
 
 
@@ -313,12 +325,12 @@ header,.title {
 footer {
     height: 100px;
 
-    background-color: green;
+    background-color: #DAF5FF;
 
     position: relative;
-    bottom: 0;
 
-    /* margin-top: 80px; */
+
+    bottom: -230px
     
 
     
@@ -333,24 +345,5 @@ footer h2 {
     top: 40px;
     
 }
-
-.one-more {
-    position: relative;
-    /* bottom: 15px; */
-
-    
-    border-radius: 50%;
-
-
-    background-color: yellowgreen;
-    padding: 10px;
-    
-}
-
-
-
-
-
-
 
 
