@@ -278,7 +278,7 @@ header,.title {
 .seaexplain {
     /* margin-left: 250px; */
     position: relative;
-    top: 70px;
+    top: 110px;
     left: 270px;
     width: 27%;
     background: blue;
@@ -309,7 +309,7 @@ header,.title {
     bottom: 400px;
     left: 1070px;
 
-    list-style: decimal;
+    list-style: inside;
 
 
 }
@@ -317,33 +317,36 @@ header,.title {
 .dre2 li:first-child {
     color: yellow;
     font-size: 35px;
+
+    list-style: none;
 }
 
 
 
 
 footer {
-    height: 100px;
+    height: 70px;
 
     background-color: #DAF5FF;
 
     position: relative;
 
 
-    bottom: -230px
-    
+    bottom: -240px;
 
-    
+
+    display: grid;
+    place-items: center;
 }
 
 footer h2 {
-    text-align: center;
-
-
-
-    position: relative;
-    top: 40px;
     
+    
+
+    
+
+
+       
 }
 
 
