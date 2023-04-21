@@ -13,7 +13,7 @@ padding: 0;
 
 body {
     font-family: "sans-serif";
-  }
+}
 
 
 html {
@@ -109,7 +109,10 @@ header,.title {
 
     text-align: left;
 
+
+
 }
+
 
 
 
@@ -145,7 +148,6 @@ header,.title {
     text-align: center;
 
     font-size: 24px;
-
 
 
 }
@@ -221,6 +223,10 @@ header,.title {
    
 }
 
+
+
+
+
 .tra2 #navtra {
     text-align: center;
 
@@ -229,8 +235,6 @@ header,.title {
     padding-top: 150px;
 
     font-size: 24px;
-
-
 
 
     
@@ -262,10 +266,8 @@ header,.title {
 }
 
 
-
-
 .dre2 {
-    height: 600px;
+    height: 700px;
 
 
 }
@@ -280,6 +282,7 @@ header,.title {
     text-align: center;
 
     font-size: 24px;
+
 
 
 
@@ -311,7 +314,7 @@ header,.title {
     border: dashed 2px white;
 
     position: relative;
-    bottom: 50px;
+    bottom: 70px;
 
 
     
@@ -363,3 +366,30 @@ footer h2 {
 }
 
 
+
+/* jQUeryによって出現のコードを制作中 */
+
+.fadeIn {
+    opacity: 0;
+    transition: 2s;
+}
+
+
+.fadeIn.is-show {
+    opacity: 1;
+}
+
+
+/*===========
+.imgBox
+===========*/
+
+.imgBox {
+    text-align: center;
+    margin: 50px 0;
+  }
+  .imgBox img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
