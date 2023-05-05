@@ -17,7 +17,7 @@ body {
 
 
 html {
-
+    
 }
 
 
@@ -27,6 +27,7 @@ body {
 
     height: 200%;
     width: 100%;
+
 
 
 
@@ -71,6 +72,8 @@ header {
 
     position: absolute;
     left: 20px;
+
+    
     
 }
 
@@ -316,30 +319,45 @@ header,.title {
     position: relative;
     bottom: 70px;
 
-
     
 }
 
-.dre2 li {
-    text-align: left;
+.dre2ul {
 
-    /* padding-left: 1100px; */
-
-    position: relative;
-
-    bottom: 500px;
-    left: 1070px;
-
-    list-style: inside;
+    
+    
 
 
 }
+
+
+.dre2 li {
+    text-align: left;
+    /* padding-left: 1100px; */
+    position: relative;
+    bottom: 500px;
+    left: 1050px;
+    /* left: 1070px; */
+    list-style: inside;
+
+
+    /* display: none; */
+
+
+
+
+
+}
+
+
 
 .dre2 li:first-child {
     color: yellow;
     font-size: 35px;
 
     list-style: none;
+
+    
 }
 
 
@@ -350,46 +368,79 @@ footer {
 
     background-color: #DAF5FF;
 
-
     display: grid;
     place-items: center;
+
 }
 
-footer h2 {
-    
-    
 
-    
-
-
-       
-}
 
 
 
 /* jQUeryによって出現のコードを制作中 */
+#visible {
+    height: 1000px;
+}
 
-.fadeIn {
+#image2 {
+    display: none;
+    /* その他のスタイル */
+}
+
+
+#image3 {
+    display: none;
+    /* その他のスタイル */
+}
+
+
+
+
+
+#slide-in {
     opacity: 0;
-    transition: 2s;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+  
+#slide-in.show {
+    opacity: 0.5;
+    transform: translateX(0);
 }
 
 
-.fadeIn.is-show {
-    opacity: 1;
+
+
+
+#slide-in2 {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s;
+}
+
+#slide-in2.show {
+    opacity: 0.5;
+    transform: translateX(0);
 }
 
 
-/*===========
-.imgBox
-===========*/
 
-.imgBox {
-    text-align: center;
-    margin: 50px 0;
-  }
-  .imgBox img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
-  }
+#slide-in3 {
+
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+   
+
+}
+  
+#slide-in3.show {
+    opacity: 0.5;
+    transform: translateX(0); /* 現在の位置にスライド */
+  
+}
+
+
+
+
