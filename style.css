@@ -13,26 +13,23 @@ padding: 0;
 
 body {
     font-family: "sans-serif";
-}
-
-
-html {
-    
-}
-
-
-body {
-    font-family: 'Noto Sans JP', sans-serif;
     background-color: #B0DAFF;
 
     height: 200%;
     width: 100%;
 
-
-
-
-
+    margin: 0;
+    padding: 0;
 }
+
+
+html {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
 
 a {
     text-decoration: none;
@@ -74,6 +71,8 @@ header {
     left: 20px;
 
     
+
+    
     
 }
 
@@ -111,6 +110,8 @@ header,.title {
     font-size: 25px;
 
     text-align: left;
+
+    font-weight: bold;
 
 
 
@@ -151,6 +152,8 @@ header,.title {
     text-align: center;
 
     font-size: 24px;
+
+    font-weight: bold;
 
 
 }
@@ -206,6 +209,10 @@ header,.title {
     margin-top: 270px;
     height: 700px;
 
+    padding-bottom: 100px;
+
+
+   
 
 
 }
@@ -215,7 +222,7 @@ header,.title {
     
     float: right;
 
-    border: 9px solid #00cc00;
+    border: 10px solid #00cc00;
 
     position: relative;
     right: 30px;
@@ -238,6 +245,8 @@ header,.title {
     padding-top: 150px;
 
     font-size: 24px;
+
+    font-weight: bold;
 
 
     
@@ -286,6 +295,8 @@ header,.title {
 
     font-size: 24px;
 
+    font-weight: bold;
+
 
 
 
@@ -324,7 +335,13 @@ header,.title {
 
 .dre2ul {
 
+    position: absolute;
     
+    bottom: -1650px;
+    /* top: 500px; */
+    z-index: 2;
+
+
     
 
 
@@ -363,13 +380,17 @@ header,.title {
 
 
 
+
+
 footer {
     height: 70px;
-
     background-color: #DAF5FF;
-
     display: grid;
     place-items: center;
+
+    
+
+    
 
 }
 
@@ -391,6 +412,7 @@ footer {
 #image3 {
     display: none;
     /* その他のスタイル */
+    z-index: 1;
 }
 
 
@@ -440,6 +462,7 @@ footer {
     transform: translateX(0); /* 現在の位置にスライド */
   
 }
+
 
 
 
