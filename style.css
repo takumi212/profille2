@@ -120,6 +120,7 @@ header,.title {
 
 
 
+
 }
 
 
@@ -171,7 +172,7 @@ header,.title {
 
 .studentexplain {
     position: absolute;
-    left: 250px;
+    left: 200px;
 
     top: 500px;
 
@@ -297,7 +298,7 @@ header,.title {
     position: absolute;
     right: 80px;
 
-    top: 1350px;
+    top: 1300px;
     
     color: yellow;
     background: blue;
