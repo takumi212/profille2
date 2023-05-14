@@ -169,9 +169,9 @@ header,.title {
 
 .studentexplain {
     position: absolute;
-    left: 130px;
+    left: 250px;
 
-    top: 400px;
+    top: 500px;
 
 
     z-index: 1;
@@ -182,7 +182,7 @@ header,.title {
     border-radius: 10px;
     opacity: 0.5;
 
-    font-size: 25px;
+    /* font-size: 10px; */
 
     
 }
