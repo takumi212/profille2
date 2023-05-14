@@ -215,8 +215,10 @@ header,.title {
     position: relative;
     /* top: 100px; */
 
-    bottom: 50px;
+    /* bottom: 50px; */
     left: 900px;
+
+
 }
 
 
@@ -295,7 +297,7 @@ header,.title {
     position: absolute;
     right: 80px;
 
-    top: 1300px;
+    top: 1350px;
     
     color: yellow;
     background: blue;
@@ -333,7 +335,7 @@ header,.title {
 .seaexplain {
     /* margin-left: 250px; */
     position: relative;
-    top: 20px;
+    top: 24px;
     left: 270px;
     width: 27%;
     background: blue;
