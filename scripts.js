@@ -46,3 +46,20 @@ $(window).scroll(function() {
 
 
 
+
+
+
+
+
+
+// スマホ版
+
+
+
+$(document).ready(function() {
+  // 「学生時代」の文字が表示されたら画像を表示する
+    $(".studentexplain,.stuimg").fadeIn(1000);
+});
+
+
+
