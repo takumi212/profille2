@@ -703,13 +703,6 @@ header,.title {
 
     display: block;
 
-  
-
-
-
-
-
-
 
     
 }
@@ -923,11 +916,6 @@ header,.title {
     
    
 
-/*  */
-    /* top: 2000px; */
-
-
-    
 
 
 }
@@ -1062,6 +1050,9 @@ footer {
   
 }
 
-
+.unnecessary-element {
+    display: none; /* 不要な要素を非表示にする */
 }
 
+
+}
