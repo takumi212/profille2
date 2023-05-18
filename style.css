@@ -198,9 +198,6 @@ header,.title {
     border: 9px solid green;
 
 
-    
-
-
 
 }
 
@@ -492,6 +489,10 @@ footer {
   
 }
 
+.hidden {
+    display: none;
+}
+
 
 }
 
@@ -585,11 +586,13 @@ header {
     border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
 
     position: absolute;
-    left: 20px;
+    /* left: 20px; */
+    
 
     text-align: center;
 
     margin-bottom: 170px;
+    
 
     
 
@@ -664,7 +667,7 @@ header,.title {
 
 
 .stu2 {
-    height: 300px;
+    /* height: 300px; */
     width: 100%;
     
     position: relative;
@@ -680,12 +683,21 @@ header,.title {
     font-size: 24px;
     font-weight: bold;
 
+    position: relative;
+    bottom: 40px;
+
+
+
+
+
+
+   
 }
 
 .studentexplain {
-    position: relative;
+    /* position: relative;
     top: 50px;
-    left: 60px;
+    left: 60px; */
 
 
     /* top: 500px; */
@@ -701,7 +713,12 @@ header,.title {
     width: 250px;
     
 
-    display: block;
+    position: relative;
+    left: 80px;
+
+    bottom: 40px;
+
+    
 
 
     
@@ -724,7 +741,20 @@ header,.title {
     height: 216px;
 
 
+
+    opacity: 1;
+    transition: opacity 1s;
+
+    position: relative;
+    bottom: 70px;
+
+    left: 30px;
+
+
+    
+
 }
+
 
 
 
@@ -739,6 +769,10 @@ header,.title {
 
     text-align: left;
 
+    position: relative;
+    bottom: 70px;
+    left: 40px;
+
 
 }
 
@@ -752,6 +786,8 @@ header,.title {
     /* height: 700px; */
 
     padding-bottom: 100px;
+
+   
 
 
 
@@ -792,6 +828,9 @@ header,.title {
 
     font-weight: bold;
 
+    position: relative;
+    bottom: 40px;
+
 
     
 }
@@ -811,7 +850,7 @@ header,.title {
 
     position: relative;
 
-    top: 490px;
+    top: 410px;
 
 
     
@@ -822,11 +861,14 @@ header,.title {
 
 
 .rizapexplain {
-    position: absolute;
-    right: 60px;
-    left: 90px;
+    
+    position: relative;
+    bottom: 130px;
+    left: 100px;
 
-    top: 1100px;
+
+    /* top: 1100px; */
+    /* left: 100px; */
     
     color: yellow;
     background: blue;
@@ -837,13 +879,14 @@ header,.title {
 
     text-align: center;
 
+    display: flex;
+
     width: 200px;
 }
 
 
 .dre2 {
-    /* height: 700px; */
-    margin-top: 50px;
+    
 
 
 }
@@ -862,7 +905,7 @@ header,.title {
     font-weight: bold;
 
     position: relative;
-    top: 120px;
+    bottom: 150px;
 
 
 
@@ -872,8 +915,8 @@ header,.title {
 .seaexplain {
     /* margin-left: 250px; */
     position: relative;
-    top: 130px;
-    left: 100px;
+    bottom: 140px;
+    left: 110px;
     width: 200px;
     background: blue;
     color: yellow;
@@ -899,6 +942,11 @@ header,.title {
 
     width: 80%;
     height: 150px;
+
+    margin-left: 10px;
+
+    position: relative;
+    bottom: 300px;
    
 
     
@@ -912,7 +960,10 @@ header,.title {
     /* top: 500px; */
     z-index: 2;
 
-    margin-top: 100px;
+    /* margin-top: 100px; */
+
+    position: relative;
+    bottom: 170px;
     
    
 
@@ -927,9 +978,9 @@ header,.title {
     /* position: relative; */
     /* bottom: -150px; */
 
-    top: 50px;
+    /* top: 50px; */
     
-    margin-left: 20px;
+    margin-left: 40px;
     /* left: 1050px; */
     /* left: 1070px; */
     list-style: inside;
@@ -982,7 +1033,8 @@ footer {
     width: 224px;
 
     position: relative;
-    top: 150px;
+    bottom: 160px;
+    left: 30px;
 
 }
 
@@ -1050,9 +1102,11 @@ footer {
   
 }
 
+
 .unnecessary-element {
     display: none; /* 不要な要素を非表示にする */
 }
+
 
 
 }
