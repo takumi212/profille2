@@ -1,6 +1,5 @@
 // スクロールすると出現する。
 
-
 $(window).scroll(function() {
   var dreamPosition = $('#navstu').offset().top - $(window).height() / 2;
   var position = $(this).scrollTop();
@@ -11,8 +10,6 @@ $(window).scroll(function() {
     $('#slide-in').addClass('show');
   }
 });
-
-
 
 
 
@@ -55,11 +52,17 @@ $(window).scroll(function() {
 // スマホ版
 
 
-
+// 👇消してもいいかと
 $(document).ready(function() {
   // 「学生時代」の文字が表示されたら画像を表示する
     $(".studentexplain,.stuimg").fadeIn(1000);
 });
+
+
+
+
+
+
 
 
 
