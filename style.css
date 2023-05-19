@@ -86,6 +86,11 @@ header {
     
 }
 
+.nav-outline span {
+    font-weight: bold;
+    
+}
+
 
 header,.title {
     font-size: 75px;
@@ -593,13 +598,13 @@ header {
 
     margin-bottom: 170px;
     
-
-    
-
-    
-    
 }
 
+
+.nav-outline span {
+    font-weight: bold;
+    
+}
 
 header,.title {
     font-size: 100px;
