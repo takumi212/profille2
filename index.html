@@ -1,78 +1,923 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>profile2</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+style.css
+
+html, body,
+ ul, ol, li,
+ h1, h2, h3, h4, h5, h6, p,
+ form, input, div {
+ margin: 0;
+ padding: 0;
+ }
+
+ html {
+  /*height: 100%;*/
+  /*width: 100%;*/
+ }
+ 
+ body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  background-color: #C0C0C0;
+
+  /* height: 100%;
+  width: 100%; */
+
+
+ }
+
+.li {
+  list-style: square inside;
+}
+
+
+
+
+
+/*PCの場合*/
+
+@media screen and (min-width: 950px) {
+
+  body {
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+    background-color: #C0C0C0;
+  
+    height: 100%;
+    width: 100%;
+  
+  
+   }
+
+  header {
+   
+    /* padding-top: 10px; */
+  
+    display: grid;
+    justify-content: start;
+  
+    grid-template-columns: auto,auto;
+  
+    opacity: 0.5;
+    background-color: rgb(255, 0, 183);
+    cursor: text;
+  
     
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
+    display: block;
+
     
 
+   
+  
+  
+  }
+  
+  
+  header .outline1 {
+    font-size: 60px;
+    color: yellow;
+    display: flex;
+    text-align: center;
+    margin-left: 330px;
+    font-family: "Arial Black";
+    font-weight: bold;
+  }
+  
+  
+  header .outline2 {
+  
+  }
+  
+  header .outline3 {
+    text-align: center;
+  
+    display: block;
+  
+  
+  }
+  
+  
+  header h4 {
+    writing-mode: vertical-rl;
+    color: yellow;
+  
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  
+    background: black;
+  }
+  
+  header h2 {
+    text-align: center;
+  
+    /*grid-column: 2;*/
+    /*grid-row: 1;*/
+  
+   overflow: hidden;
+  
+  } 
+  
+  header p {
+    font-family: sans-serif;
+  
+    /*grid-column: 2;*/
+    /*grid-row: 2;*/
+  
+    overflow: hidden;
+  }
+  
+  header h5 {
+    display: flex;
+    align-items: flex-end;
 
-    <div class="wrap">
-        <header>
-            <p class="nav-outline">　こちらのポートフォリオは私が就職活動の際にご提出させていただくことために<br>制作致しました。こちらのポートフォリオは、HTML、CSS、JavaScript（jQuery）<br>を使用しております。今後から貴社でのご業務に取り組ませていただけることを<br>心より願っております。よろしくお願いします。<br><br><span>※こちらのポートフォリオはMacbookPro13とiphoneXRの画面に対応しています。</span></p>
-            <p class="title">profile2</p>
-            <ul class="navthree">
-                <!-- ポートフォリオについての説明をpタグを用いて書く。 -->
-                <li><a class="one-more" href="https://takumi212.github.io/myprofile/"><span>前のページ</span></a></li>
-                <li><a href="#navstu">学生時代</a></li>
-                <li><a href="#navtra">トレーニング</a></li>
-                <li><a href="#navdre">夢</a></li>
-                <!-- <li><a class="career" href=""><span>次のページ</span></a></li> -->
-            </ul>
-        </header>
+    font-weight: bold;
+
+  }
 
 
 
-        <!-- <div class="stu2"> -->
-            <p name="navstu" id="navstu">学生時代</p>
-            <p class="studentexplain" id="slide-in">　こちらは私がこれから社会に出て働くことを踏まえて、静岡県<br>の駿府公園で撮った写真です。私はこのときに大学生の方々、社<br>会人の方々と一緒に静岡県の駿府公園にお出掛けしていました。<br>この頃は、2020年3月にコロナウイルスが蔓延し始めた頃でした。<br>生活を送っている中で人と人が交流をする機会が大いに減ってしま<br>い、寂しく感じることが多かったですが、ご友人の方々との交流を<br>交わすことによって充実した時間を過ごせました。</p>
-            <img src="cherry.jpg" class="stuimg hidden" alt="桜で撮った写真" width="720" height="480" style="display: none;">
-            <p class="student-me">　私は静岡英和学院大学を卒業致しました。大学生時代にはエンジニ<br>アとして業務に取り組むためにパソコンの学習をしておりました。僕<br>は大学を卒業した後に東京都あるいは神奈川県のエリアでお仕事先を<br>探して、IT企業に入社することを決めていました。私はWebやAIの構<br>築に取り組ませていただけるエンジニアになりたいと思っています。</p>
+  
 
 
-        <!-- </div> -->
-        <div class="tra2">
-            <p name="navtra" id="navtra">トレーニング</p>
-            <p class="tra-outline">　私は16歳の頃からトレーニングをしており、忙しい時期以外は週に二回または<br>三回、トレーニングのお部屋を利用して自身の鍛錬に励んでいました。トレーニン<br>グを継続的に行うことによって、周囲の方々から認めていただけたり、自信を持つ<br>ことができるようになりました。将来はプロのレベルまでトレーニングを上達させ<br>たいと考えており、トレーニングによって健康であることを目指しています。また、<br>人間関係も良好に築いていけたら幸いに思います。</p>
-            <p class="rizapexplain" id="slide-in2">　こちらは[ライザップ牛サラダ]と言います。高いたん<br>ぱくと糖質が低いボリュームいっぱいのサラダです。<br>牛肉だけでなく、鶏肉・ブロッコリー・半熟玉子と<br>バランスよくたんぱく質を摂取できます。私はこち<br>らの商品をトレーニング後によく食べていました。</p>
-            <div id="image2">
-                <img src="protein.jpg"　class="hidden" alt="プロテインの画像" width="500" height="400">
-            </div>
-        </div>
+
+
+.left-box {
+ width: 100%;
+ /*height: 300px;*/
+ position: relative;
+ /*background: darkred;*/
+ /*width: 80%;*/
+ height: 50px;
+ text-align: center;
+ /*margin-left: 10%;*/
+
+
+}
+
+.left-box:before {
+ top: 0;
+ left: 50%;
+ width: 50%;
+ height: 100%;
+ content: '';
+ position: absolute;
+ /*background: #e3d7a3;*/
+}
+
+.left-box img {
+  /*margin-left: 25%;*/
+  margin-right: 750px;
+  vertical-align: middle;
+  margin-top: 125px;
+
+
+  border-radius: 10px;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 30;;
+
+  color: #474747;
+  background: whitesmoke;/*背景色*/
+
+  border-top: double 7px #4ec4d3;
+  border-bottom: double 7px #4ec4d3;
+  border-left: double 7px #4ec4d3;
+  border-right: double 7px #4ec4d3;
+}
+
+
+
+
+.right-box {
+  float: right;
+  width: 50%;
+  background-color: #FAB1AF;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+
+
+.html {
+  border-radius: 5px;
+  background-color: yellowgreen;
+  display: inline-block;
+  padding: 3px 4px;
+  margin-left: 5px;
+}
+
+.css {
+  border-radius: 5px;
+  background-color: lightyellow;
+  display: inline-block;
+  padding: 3px 4px;
+  
+}
+
+.JavaScript {
+  border-radius: 5px;
+  background-color: lightblue;
+  display: inline-block;
+  padding: 3px 4px;
+}
+
+.Python {
+  border-radius: 5px;
+  background-color: skyblue;
+  display: inline-block;
+  padding: 3px 4px;
+}
+
+.Java {
+  border-radius: 5px;
+  background-color: rgb(170, 119, 68);
+  display: inline-block;
+  padding: 3px 4px;
+}
+
+.Word {
+  border-radius: 5px;
+  background-color: lightblue;
+  display: inline-block;
+  padding: 3px 4px;
+
+}
+
+.Excel {
+  background-color: darkturquoise;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px 4px;
+
+}
+
+.PowerPoint {
+  background-color: orange;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px 4px;
+
+}
+
+
+.html,.css,.JavaScript,.Python,.Java,.Word,.Excel,.PowerPoint {
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px 4px;
+  margin-bottom: 5px;
+  display: inline-block;
+
+
+
+}
+
+
+.html:hover::after,
+.css:hover::after,
+.JavaScript:hover::after,
+.Python:hover::after,
+.Java:hover::after,
+.Word:hover::after,
+.Excel:hover::after,
+.PowerPoint:hover::after {
+  content: attr(data-text);
+
+  left: 50%;
+
+  top: -2.5rem;
+  transform: translateX(-50%);
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 2;
+  border-radius: 5px;
+  padding: .5em .6em;
+  color: black;
+  background: white;
+  box-sizing: border-box;
+  
+
+}
+
+/* 飛び出している部分1 */
+.html:hover::before,
+.css:hover::before,
+.JavaScript:hover::before,
+.Python:hover::before,
+.Java:hover::before,
+.Word:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+  border: 12px solid transparent;
+  border-top: 12px solid white;
+
+  box-sizing: border-box;
+
+}
+
+
+.Excel:hover::after,
+.PowerPoint:hover::after {
+  content: attr(data-text);
+  left: 20%;
+  top: -2.5rem;
+  transform: translateX(-50%);
+  display: inline-block;
+  white-space: nowrap;
+
+  position: absolute;
+  z-index: 2;
+  border-radius: 5px;
+  padding: .5em .6em;
+  color: black;
+  background: white;
+
+  box-sizing: border-box;
+    
+}
+
+
+a#instagram {
+   background: linear-gradient(135deg, #427EFF 0%, #F13F79 70%) no-repeat;
+   overflow: hidden;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 0;
+   position: relative;
+   border-radius: 4px;
+   margin-left: 15px;
+   margin-right: 10px;
+   text-decoration: none;
+   margin-bottom: 5px;
+ }
+ a#facebook {
+   background: #3B5998;
+   overflow: hidden;
+   font-weight: bold;
+   font-family:'Courier',sans-serif;
+   border-radius: 4px;
+   font-size: 20px;
+   color: white;
+   text-decoration: none;
+ }
+
+
+
+footer {
+  /*position: absolute;*/
+  
+  /* position: fixed;
+  width: 100%; */
+
+  margin-bottom: 130px;
+
+  /* text-align: center; */
+  right: 0px;
+
+
+}
+
+
+
+footer h3 {
+  padding-top: 20px;
+
+  background-color: #B4E4FF;
+  height: 40px;
+  width: 100%;
+
+  text-align: center;
+
+  
+
+
+}
+
+.one-more {
+  background-color: turquoise;
+  color: aliceblue;
+  font-size: 30px;
+  
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*スマホの場合*/
+@media screen and (max-width: 900px) {
+
+  
+
+
+  body {
+    height: 1160px;
+    }
+
+
+
+  header {
+    
+    padding-top: 10px;
+  
+    display: grid;
+    justify-content: start;
+  
+    grid-template-columns: auto,auto;
+  
+    opacity: 0.5;
+    background-color: royalblue;
+    cursor: text;
+  
+    /* text-align: center; */
+    
+    display: block;
+
+    height: 100px;
+
+    overflow: hidden;
+
+    
+  
+    }
+  
+
+    header .outline1 {
+        font-size: 26px;
+        color: yellow;
+        display: flex;
+        text-align: center;
+        margin-left: 33px;
+       
+        font-family: "Arial Black";
+        font-weight: bold;
 
         
+    }
+      
+      
+    header .outline2 {
+      height: 120px;
+      color: black;
+      max-width: 100%;
+      font-size: 0.2vw;
 
-        <div class="dre2">
-            <p name="navdre" id="navdre">夢</p>
-            <p class="seaexplain" id="slide-in3">　こちらは私が１９歳から２０歳になったことを機に<br>プログラミング言語の学習をスタートしたときに<br>撮った沖縄県の美浜という地域から撮った海です。</p>
-            <div id="image3">
-                <img src="sea.jpg"　class="hidden" alt="沖縄の海" width="800" height="400">
-            </div>
-            <div class="dre2ul">
-                <ul>
-                    <li>[私が叶えたい夢]</li>
-                    <li>優秀なエンジニアとして活躍すること</li>
-                    <li>色々なエンジニアの人と仲良くなること</li>
-                    <li>家族と親戚を幸せにすること</li>
-                    <li>お金持ちになること</li>
-                    <li>車を買うこと</li>
-                    <li>日本と外国に複数件の別荘を持つこと</li>
-                    <li>トレーニングをすること</li>
-                    <li>見た目が良い男性になること</li>
-                    <li>１ヶ月に１０冊の読書ができるようになること</li>
-                </ul>
-            </div>
-        </div>  
+      line-height: 1;
+      overflow: hidden;
+      text-overflow: ellipsis; /* 要素の範囲を超えたテキストを省略記号で表示 */
+    
 
-        <footer>
-            <h2>@Takumi.profile2</h2>
-        </footer>
-    </div>
-</body>
+
+    }
+      
+    header .outline3 {
+      /* text-align: center; */
+      
+      /* display: block; */
+
+      font-size: 16px;
+      
+
+    }
+      
+      
+    header h4 {
+      color: yellow;
+    
+    }
+      
+    header h2 {
+      text-align: center;
+      
+      
+      
+       overflow: hidden;
+      
+    } 
+      
+    header p {
+      font-family: sans-serif;
+      
+       
+      
+      overflow: hidden;
+    }
+      
+    header h5 {
+      /* display: flex;
+      align-items: flex-end; */
+
+      display: none;
+
+      font-weight: bold;
+
+    }
+
+
+    .outline2:target h5 {
+      display: flex; クリックされた場合に表示する
+      align-items: flex-end;
+
+      display: block;
+
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+  
+    
+    .left-box {
+     width: 100%;
+     /*height: 300px;*/
+     position: relative;
+     /*background: darkred;*/
+     /*width: 80%;*/
+     height: 50px;
+     text-align: center;
+     /*margin-left: 10%;*/
+    
+    
+    }
+    
+    .left-box:before {
+     top: 0;
+     left: 50%;
+     width: 50%;
+     height: 100%;
+     content: '';
+     position: absolute;
+     /*background: #e3d7a3;*/
+    }
+    
+    .left-box img {
+     
+    
+      border-radius: 10px;
+      border-image: linear-gradient(#f6b73c, #4d9f0c) 30;;
+      
+      margin-top: 70px;
+
+      color: #474747;
+      background: whitesmoke;/*背景色*/
+    
+      border-top: double 7px #4ec4d3;
+      border-bottom: double 7px #4ec4d3;
+      border-left: double 7px #4ec4d3;
+      border-right: double 7px #4ec4d3;
+    }
+    
+    
+    
+    
+    .right-box {
+      float: right;
+      width: 100%;
+      background-color: #FAB1AF;
+      z-index: 1;
+      padding-bottom: 20px;
+      margin-top: 350px;
+    }
+    
+    
+    }
+    
+    .html {
+      border-radius: 5px;
+      background-color: yellowgreen;
+      display: inline-block;
+      padding: 3px 4px;
+      margin-left: 5px;
+    }
+    
+    .css {
+      border-radius: 5px;
+      background-color: lightyellow;
+      display: inline-block;
+      padding: 3px 4px;
+    }
+    
+    .JavaScript {
+      border-radius: 5px;
+      background-color: lightblue;
+      display: inline-block;
+      padding: 3px 4px;
+    }
+    
+    .Python {
+      border-radius: 5px;
+      background-color: skyblue;
+      display: inline-block;
+      padding: 3px 4px;
+    }
+    
+    .Java {
+      border-radius: 5px;
+      background-color: rgb(170, 119, 68);
+      display: inline-block;
+      padding: 3px 4px;
+    }
+    
+    .Word {
+      border-radius: 5px;
+      background-color: lightblue;
+      display: inline-block;
+      padding: 3px 4px;
+    
+    }
+    
+    .Excel {
+      background-color: darkturquoise;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 3px 4px;
+    
+    }
+    
+    .PowerPoint {
+      background-color: orange;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 3px 4px;
+      /* margin-left: 5px; */
+    
+    }
+    
+    
+    .html,.css,.JavaScript,.Python,.Java,.Word,.Excel,.PowerPoint {
+      position: relative;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 3px 4px;
+      margin-bottom: 5px;
+      display: inline-block;
+    
+      
+      
+    
+    }
+
+.html:hover::after,
+.css:hover::after,
+.JavaScript:hover::after,
+.Python:hover::after,
+.Java:hover::after,
+.Word:hover::after {
+  content: attr(data-text);
+
+  left: 50%;
+
+  top: -2.5rem;
+  transform: translateX(-50%);
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 2;
+  border-radius: 5px;
+  padding: .5em .6em;
+  color: black;
+  background: white;
+  box-sizing: border-box;
+  
+
+}
+
+.css:hover::after {
+  content: attr(data-text);
+
+  left: 50%;
+
+  display: inline-block;
+  
+
+  font-size: 9px;
+
+  top: -2.5rem;
+  transform: translateX(-50%);
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 2;
+  border-radius: 5px;
+  padding: .5em .6em;
+  color: black;
+  background: white;
+  box-sizing: border-box;
+  
+
+}
+
+
+.Excel:hover::after,
+.PowerPoint:hover::after {
+  content: attr(data-text);
+
+  left: 10%;
+
+  top: -2.5rem;
+  transform: translateX(-50%);
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 2;
+  border-radius: 5px;
+  padding: .5em .6em;
+  color: black;
+  background: white;
+  box-sizing: border-box;
+  
+
+}
+
+/* 飛び出している部分1 */
+.html:hover::before,
+.css:hover::before,
+.JavaScript:hover::before,
+.Python:hover::before,
+.Java:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+  border: 12px solid transparent;
+  border-top: 12px solid white;
+
+  box-sizing: border-box;
+
+}
+
+.css:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+
+
+  left: 50%;
+
+  transform: translateX(-50%);
+  border: 12px solid transparent;
+  border-top: 12px solid white;
+
+  box-sizing: border-box;
+
+}
+
+.Word:hover::before,
+.Excel:hover::before,
+.PowerPoint:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+  border: 12px solid transparent;
+  border-top: 12px solid white;
+
+  box-sizing: border-box;
+
+}
+    
+    
+    
+    
+    
+    
+    a#instagram {
+       background: linear-gradient(135deg, #427EFF 0%, #F13F79 70%) no-repeat;
+       overflow: hidden;
+       font-size: 20px;
+       font-weight: bold;
+       letter-spacing: 0;
+       position: relative;
+       border-radius: 4px;
+       margin-left: 15px;
+       margin-right: 10px;
+       text-decoration: none;
+       margin-bottom: 5px;
+     }
+     a#facebook {
+       background: #3B5998;
+       overflow: hidden;
+       font-weight: bold;
+       font-family:'Courier',sans-serif;/* 好きなフォントに変えてね */
+       border-radius: 4px;
+       font-size: 20px;
+       color: white;
+       text-decoration: none;
+     }
+
+     .secondurl {
+      text-align: right;
+  
+      position: absolute;
+      right: 395px;
+      bottom: 213px;
+      text-decoration: none;
+      color: yellow;
+
+      background-color: #B4E4FF;
+      border-radius: 4px;
+      font-weight: bold;
+
+      margin-left: 15px;
+      margin-right: 10px;
+      text-decoration: none;
+      margin-bottom: 5px;
+      overflow: hidden;
+      
+  
+    }
+    
+    .thirdurl {
+      text-align: right;
+  
+      position: absolute;
+      right: 302px;
+      bottom: 213px;
+      text-decoration: none;
+      color: black;
+
+      background-color: white;
+      border-radius: 4px;
+      font-weight: bold;
+
+      margin-left: 15px;
+      margin-right: 10px;
+      text-decoration: none;
+      margin-bottom: 5px;
+      overflow: hidden;
+      
+    }
+
+
+    
+    footer {
+      /*position: absolute;*/
+      
+      /* width: 100%; */
+
+      position: absolute;
+      bottom: -131px;
+
+      width: 100%;
+      
+    }
+    
+    
+    footer h3 {
+      /* margin-top: 200px; */
+      padding-top: 20px;
+      /*margin-left: 620px;*/
+      /*margin-right: 620px;*/
+      background-color: #B4E4FF;
+      height: 40px;
+
+      text-align: center;
+      
+      /* padding-right: 30px; */
+
+      /* position: absolute; */
+      /* bottom: 0; */
+
+
+    }
+    
+    .one-more {
+      background-color: turquoise;
+      color: aliceblue;
+      font-size: 30px;
+      
+    }
+    
+    
+  
+  }
+
