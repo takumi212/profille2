@@ -582,11 +582,15 @@ header {
 }
 
 .nav-outline {
-    font-size: 4px;
+    font-size: 3px;
 
-    /* margin-right: 20px auto; */
+    letter-spacing: -1px;
 
-    padding: 0.5em;
+    text-transform: lowercase;
+
+
+
+
     color: #494949;/*文字色*/
     background: #fffaf4;/*背景色*/
     border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
@@ -594,10 +598,15 @@ header {
     position: absolute;
     /* left: 20px; */
     
-
     text-align: center;
 
     margin-bottom: 170px;
+
+    margin-top: -30px;
+
+    line-height: 1.1;
+
+
     
 }
 
@@ -716,13 +725,18 @@ header,.title {
     border-radius: 10px;
     opacity: 0.5;
 
-    width: 250px;
+    width: 57%;
+
     
 
     position: relative;
     left: 80px;
 
     bottom: 40px;
+
+  
+
+    
 
     
 
@@ -856,7 +870,7 @@ header,.title {
 
     position: relative;
 
-    top: 410px;
+    top: 440px;
 
 
     
