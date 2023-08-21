@@ -68,7 +68,6 @@ header {
 }
 
 .nav-outline {
-    font-size: 4px;
 
     /* margin-right: 20px auto; */
 
@@ -79,6 +78,9 @@ header {
 
     position: absolute;
     left: 20px;
+
+    font-size: 10px;
+    line-height: 1.5;
 
     
 
