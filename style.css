@@ -80,6 +80,8 @@ header {
     left: 20px;
 
     font-size: 10px;
+
+
     line-height: 1.5;
 
     
@@ -335,13 +337,13 @@ header,.title {
     /* margin-left: 250px; */
     position: relative;
     top: 48px;
-    right: -250px;
+    right: -505px;
 
     width: 27%;
     background: blue;
-    color: yellow;
+    color: white;
     border-radius: 10px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 
     z-index: 1;
 
@@ -358,7 +360,7 @@ header,.title {
     border: dashed 2px white;
 
     position: relative;
-    bottom: 70px;
+    bottom: 170px;
 
     
 }
@@ -584,9 +586,9 @@ header {
 }
 
 .nav-outline {
-    font-size: 3px;
+    font-size: 5px;
 
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
 
     text-transform: lowercase;
 
@@ -604,9 +606,13 @@ header {
 
     margin-bottom: 170px;
 
-    margin-top: -30px;
+    /* margin-top: -30px; */
 
-    line-height: 1.1;
+    line-height: 1.2;
+
+    white-space: normal; 
+    /* 改行を無効にする */
+
 
 
     
@@ -1032,8 +1038,9 @@ footer {
     display: grid;
     place-items: center;
 
-    margin: 0;
-    padding: 0;
+
+    bottom: 0; /* 下端に固定 */
+    /* position: fixed; 固定位置に設定 */
 
     
 
